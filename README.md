@@ -1,6 +1,6 @@
 # MyGameBlog
 
-Nuestro de proyecto consta de un pagina web donde la gente puede subir sus propios blogs acerca de los juegos que han jugado y contenido de tips y secretos de cada juego.
+Nuestro proyecto consta de un pagina web donde la gente puede subir sus propios blogs acerca de tips, easter eggs y reseñas de videojuegos.
 
 Creado por Diego Lecanda Alvarez, Mario Pérez y Grecia Morales.
 
