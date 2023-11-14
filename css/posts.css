@@ -2,13 +2,81 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'calibri';
 }
 
 body {
-    background: #000;
-    background: url('./img/games.jpg') no-repeat center center fixed;
+    background: url('../img/games.jpg') no-repeat center center fixed;
     background-size: cover;
+}
+
+.menu-container {
+    position: fixed;
+    display: flex;
+}
+
+.menu {
+    height: 100%;
+    transition: .3s;
+    background: #ffffff12;
+    padding: 20px 20px 20px 0;
+    width: 85px;
+    box-shadow: 8px 0px 9px 0px #00000014;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+.menu:hover li span:nth-child(2) {
+    display: block;
+}
+
+.menu-content li {
+    list-style: none;
+    border-radius: 0px 50px 50px 0;
+    transition: .3s;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.menu-content li:hover {
+    background: #0c0c0c;
+}
+
+.menu-content li span:nth-child(2) {
+    display: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+    display: flex;
+    align-items: center;
+    font-family: 'calibri';
+}
+
+.menu a:hover {
+    text-decoration:none;
+}
+
+.menu button {
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+    display: flex;
+    align-items: center;
+    font-family: 'calibri';
+    background-color: transparent;
+    border: #00000000;
+}
+
+.material-symbols-outlined {
+    font-size: 25px;
+    margin-right: 10px;
+    background: #0c0c0c;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 #main-container {
@@ -240,32 +308,3 @@ section label {
 .signup-form .bottom {
     justify-content: flex-end;
 }
-
-@keyframes above {
-    0% {
-        transform: translate3d(0, 0, -500px);
-    }
-
-    50% {
-        transform: translate3d(70%, 0, -100px);
-    }
-
-    100% {
-        transform: translate3d(0px, 0, 0px);
-    }
-}
-
-@keyframes below {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    50% {
-        transform: translate3d(-70%, 0, 0px);
-    }
-
-    100% {
-        transform: translate3d(0px, 0, -200px);
-    }
-}
-
