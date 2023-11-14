@@ -12,6 +12,7 @@ body {
 .menu-container {
     position: fixed;
     display: flex;
+    z-index: 1;
 }
 
 .menu {
@@ -23,6 +24,7 @@ body {
     box-shadow: 8px 0px 9px 0px #00000014;
     backdrop-filter: blur(5px);
     min-height: 100vh;
+    z-index: 1;
 }
 
 .menu:hover {

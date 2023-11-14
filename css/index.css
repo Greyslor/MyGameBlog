@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+#background-title h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200px !important;
+}
+
 body {
     background: url('../img/games.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -22,6 +36,7 @@ body {
     box-shadow: 8px 0px 9px 0px #00000014;
     backdrop-filter: blur(5px);
     min-height: 100vh;
+    z-index: 1;
 }
 
 .menu:hover {
@@ -72,4 +87,12 @@ button {
     background: #0c0c0c;
     border-radius: 50%;
     padding: 10px;
+}
+
+#carouselExampleIndicators {
+    margin-top: -3rem;
+    margin-bottom: 20px;
+    margin-left: 150px; 
+    margin-right: 150px;
+    
 }
