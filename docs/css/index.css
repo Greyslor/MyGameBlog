@@ -5,7 +5,7 @@
 }
 
 #background-title h1 {
-    position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -29,6 +29,8 @@ body {
 }
 
 .menu {
+    position: fixed;
+    top: 0%;
     height: 100%;
     transition: .3s;
     background: #ffffff12;
@@ -94,9 +96,8 @@ body {
 }
 
 #carouselExampleIndicators {
-    margin-top: -3rem;
+    border-radius: 20px;
     margin-bottom: 20px;
-    margin-left: 150px; 
-    margin-right: 150px;
-    
+    margin-left: 200px; 
+    margin-right: 200px;   
 }
