@@ -5,7 +5,7 @@
 }
 
 #background-title h1 {
-    
+
     top: 0;
     left: 0;
     width: 100%;
@@ -29,8 +29,8 @@ body {
 }
 
 .menu {
+    margin-top:-14rem;
     position: fixed;
-    top: 0%;
     height: 100%;
     transition: .3s;
     background: #ffffff12;
@@ -96,8 +96,107 @@ body {
 }
 
 #carouselExampleIndicators {
-    border-radius: 20px;
+    margin-top: -3rem;
     margin-bottom: 20px;
-    margin-left: 200px; 
-    margin-right: 200px;   
+    margin-left: 150px; 
+    margin-right: 150px;
+    
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 400px;
+}
+
+.form-container {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.login-form {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    background: rgb(253, 253, 253);
+}
+
+.title {
+    font-size: 30px;
+}
+
+.above {
+    animation: above .8s ease-in-out forwards;
+}
+
+.below {
+    animation: below .8s ease-in-out forwards;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 50px 0;
+    font-size: 15px;
+}
+
+section label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+.field {
+    position: relative;
+    margin-top: 50px;
+}
+
+.field label {
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: .3s;
+    position: absolute;
+}
+
+.field image {
+    padding-bottom: 1rem;
+}
+
+.login-btn {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .3s;
+    color: white;
+    background: #1a1a1a;
+    padding: 5px;
+}
+
+.login-btn {
+    margin: 0 0 35px 0;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    transform: scale(0.9);
 }
