@@ -57,46 +57,35 @@
                     <div>Don't have an Account?&nbsp;<a class="signup-switch" onclick="swapPos()">Sign up</a></div>
                 </div>
             </div>
-            <div class="signup-form below">
+            
+          <div class="signup-form below form-signin">
                 <div class="title">SIGN UP</div>
-                <form>
-                    <div class="field">
-                        <input type="text" id="name" placeholder=" " required>
-                        <label for="name">Name</label>
-                        <i class="fa fa-user"></i>
-                    </div>
+                <form id="form-signin">
+                    
+                    
+                    
+                    
+                    
 
-                    <div class="field">
-                        <input type="email" id="user-email" placeholder=" " required autocomplete="on">
+                    <div class="field"> 
+                        <input type="email" name="email" id="user-email" placeholder=" " required autocomplete="on">
                         <label for="user-email">Email</label>
                         <i class="fa fa-envelope"></i>
                     </div>
 
                     <div class="field">
-                        <input type="password" id="password" required placeholder=" " autocomplete="off">
-                        <label for="password">Password</label>
+                        <input type="password" name="pass" id="password" required placeholder=" " autocomplete="off">
+                        <label for="password">Contraseña</label>
                         <i class="fa fa-lock"></i>
                     </div>
-
-                    <div class="field">
-                        <input type="password" id="confirm-pass" required placeholder=" " autocomplete="off">
-                        <label for="confirm-pass">Confirm Password</label>
-                        <i class="fa fa-lock"></i>
-                    </div>
-
-                    <section>
-                        <label for="agree"><input type="checkbox" id="agree">I agree to all&nbsp;<a href="#">Terms &
-                                Conditions</a></label>
-                    </section>
-                    <button class="signup-btn">Register</button>
+                   
+                   <input class="signup-btn" type="submit" value="Crear Cuenta"  />
+                    
                 </form>
-
-                <div class="bottom">
-                    <span>Already Registered?&nbsp;<a class="login-switch" onclick="swapPos()">Login</a></span>
-                </div>
-            </div>
         </div>
     </div>
     <script src="../js/login.js"></script>
+    <script src="../js/js firebase/main.js" type="module"></script>
+
 </body>
 </html>
