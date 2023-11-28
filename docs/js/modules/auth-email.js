@@ -16,14 +16,15 @@ import {
       console.log(user);
   
       if (user) {
-        //console.log("Usuario Autenticado");
+        console.log("Usuario Autenticado");
         $appAuthEmail.innerHTML = `
-          <p>Si ves este contenido es porque estás logueado</p>
+          <p class="message" >Si ves este contenido es porque estás logueado</p>
           <button id="logout">Salir</button>
         `;
+        
       } else {
-        //console.log("Usuario NO Autenticado");
-        $appAuthEmail.innerHTML = `<p>El contenido de esta sección es exclusivo para usuarios registrados</p>`;
+        console.log("Usuario NO Autenticado");
+        $appAuthEmail.innerHTML = `<p class="message">El contenido de esta sección es exclusivo para usuarios registrados</p>`;
       }
     });
   
@@ -33,17 +34,17 @@ import {
   
       if ($form.matches("#form-signin")) {
         alert("Creando Cuenta");
-        //console.log(form.nombre.value, form.email.value, form.pass.value);
+        //console.log( form.email.value, form.pass.value);
   
         createUserWithEmailAndPassword(auth, $form.email.value, $form.pass.value)
           .then((res) => {
-            //console.log(res);
-            $appAuthEmail.innerHTML = `<p>Usuario creado con el correo <b>${$form.email.value}</b></p>`;
+            console.log(res);
+            $appAuthEmail.innerHTML = `<p class="message">Usuario creado con el correo <b>${$form.email.value}</b></p>`;
             $form.reset();
           })
           .catch((err) => {
-            //console.log(err);
-            $appAuthEmail.innerHTML = `<p>Ocurrio un error al crear la cuenta <b>${err.message}</b></p>`;
+            console.log(err);
+            $appAuthEmail.innerHTML = `<p class="message">Ocurrio un error al crear la cuenta <b>${err.message}</b></p>`;
             $form.nombre.focus();
           });
       }
@@ -53,13 +54,15 @@ import {
   
         signInWithEmailAndPassword(auth, $form.email.value, $form.pass.value)
           .then((res) => {
-            //console.log(res);
-            $appAuthEmail.innerHTML = `<p>Usuario logueado con el correo <b>${$form.email.value}</b></p>`;
+            console.log(res);
+            console.log("logueoexistodo")
+            $appAuthEmail.innerHTML = `<p class="message">Usuario logueado con el correo <b>${$form.email.value}</b></p>`;
             $form.reset();
+            window.location.href = "juegolog.html";
           })
           .catch((err) => {
-            //console.log(err);
-            $appAuthEmail.innerHTML = `<p>Ocurrio un error al iniciar sesión <b>${err.message}</b></p>`;
+            console.log(err);
+            $appAuthEmail.innerHTML = `<p class="message">Ocurrio un error al iniciar sesión <b>${err.message}</b></p>`;
             $form.pass.focus();
           });
       }
