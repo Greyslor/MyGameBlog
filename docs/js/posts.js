@@ -28,3 +28,17 @@ const wrapper = document.querySelector(".wrapper");
              fileName.textContent = valueStore;
            }
          });
+
+function showConfirmationMessage(message) {
+  const confirmationMessage = document.getElementById('confirmation-message');
+  const confirmationText = document.getElementById('confirmation-text');
+
+  confirmationText.innerText = message;
+  confirmationMessage.style.display = 'block';
+
+  setTimeout(() => {
+      confirmationMessage.style.display = 'none';
+  }, 3000);  
+}
+
+showConfirmationMessage('¡El nuevo post se ha creado correctamente!');
