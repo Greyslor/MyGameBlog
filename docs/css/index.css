@@ -198,43 +198,26 @@ section label {
     transform: scale(0.9);
 }
 
-.carousel {
-    position: relative;
+.slider-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
     width: 100%;
-    overflow: hidden;
+    height: 70vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
-
-.slide {
-    display: none;
-    position: absolute;
+  
+.slider-container img {
+    flex: 0 0 100%;
     width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
 }
 
-.slide img {
-    width: 100%;
-    height: auto;
+#content-container {
+    margin-left: 120px;
+    margin-right: 230px;
 }
 
-.active {
-    display: block;
-}
-
-.prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: white;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
 

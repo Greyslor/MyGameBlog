@@ -17,15 +17,17 @@ function show()
 
 let currentSlide = 0;
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.slide');
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (index + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
-}
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slider-item');
+            if (slides.length === 0) return;  // Agrega esta línea para evitar errores si no hay slides
 
-function changeSlide(offset) {
-    showSlide(currentSlide + offset);
-}
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
 
-showSlide(currentSlide);
+        function changeSlide(offset) {
+            showSlide(currentSlide + offset);
+        }
+
+        showSlide(currentSlide);
