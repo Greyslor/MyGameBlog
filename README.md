@@ -23,6 +23,7 @@ Creado por Diego Lecanda Alvarez, Mario Pérez y Grecia Morales.
     1. Conexión de estilos entre html y css
     1. Selección de imágenes para su uso dentro del diseño de la página
     1. Correción de atributos en funciones css
+    1. Arreglo de Firebase y autenticación de usuarios
 - Mario Pérez:
     1. Implementación de primeros diseños de posts
     1. Diseño y estilos de Navbar
