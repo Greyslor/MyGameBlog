@@ -29,7 +29,7 @@ body {
 }
 
 .menu {
-    margin-top:-14rem;
+    top: 0%;
     position: fixed;
     height: 100%;
     transition: .3s;
@@ -175,7 +175,7 @@ section label {
     position: absolute;
 }
 
-.field image {
+.field img {
     padding-bottom: 1rem;
 }
 
@@ -190,9 +190,6 @@ section label {
     color: white;
     background: #1a1a1a;
     padding: 5px;
-}
-
-.login-btn {
     margin: 0 0 35px 0;
 }
 
@@ -200,3 +197,44 @@ section label {
 .signup-btn:hover {
     transform: scale(0.9);
 }
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
