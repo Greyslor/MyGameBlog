@@ -4,7 +4,7 @@ import {
     GoogleAuthProvider,
     signInWithPopup,
     signOut,
-  } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+  } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
   
   export function authGoogle(app) {
     const d = document,

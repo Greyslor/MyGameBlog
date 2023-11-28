@@ -3,7 +3,7 @@ import {
     ref as refStorage,
     uploadBytesResumable,
     getDownloadURL,
-  } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-storage.js";
+  } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-storage.js";
   export function firebaseStorage(app) {
     const storage = getStorage(app),
 

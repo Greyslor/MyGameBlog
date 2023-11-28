@@ -4,7 +4,7 @@ import {
     GithubAuthProvider,
     signInWithPopup,
     signOut,
-  } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+  } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
   
   export function authGitHub(app) {
     

@@ -1,4 +1,4 @@
-import{initializeApp} from  "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+import{initializeApp} from  "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
 const firebaseConfig = {
     apiKey: "AIzaSyBYx4ZkabEr7lsbaNb2gT0K_Klg4WbLNKc",
     authDomain: "mygameblog-89f58.firebaseapp.com",

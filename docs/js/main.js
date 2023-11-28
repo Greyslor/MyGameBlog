@@ -4,6 +4,7 @@ import { authEmail } from "./modules/auth-email.js";
 import { authGitHub } from "./modules/auth-github.js";
 import { authGoogle } from "./modules/auth-google.js";
 import { firebaseStorage } from "./modules/storage.js";
+import { contactForm } from "./modules/contact-form.js";
 
 console.log(app);
 //firebaseCRUD(app);
@@ -11,3 +12,4 @@ authEmail(app);
 authGitHub(app);
 authGoogle(app);
 firebaseStorage(app);
+contactForm(app);
